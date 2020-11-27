@@ -1,0 +1,111 @@
+
+.App{
+  background-image: url(../Images_proyectos/bg-doctor-inicio-sesion-movil.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  text-align: center;
+}@media(max-width: 990px){
+    .App{
+      background: rgba(75, 75, 75, 0.699);
+      text-align: center;
+    }
+}
+.Text_info{
+  text-align: justify;
+  font-size: small;
+}
+/*IMAGE-ZONE*/
+.img-fluid{
+  margin: 50px 0px 30px 0px;
+}
+/*IMAGE-ZONE-END*/
+/*BLOQUE INICIO SESIÓN*/
+#Bloque_inicio{
+  text-align: left;
+  border-width: 1px;
+  background-color: white;
+  box-shadow: 2px 2px 5px #999;
+  display: inline-block;
+}
+
+#Texto_inicio{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  color: rgba(95, 97, 100, 0.719);
+  display: flex;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+/*INPUT-ZONE*/
+#i-email{
+  transition: all .3s;
+}
+#i-pass{
+  transition: all .3s;
+}
+.form-label{
+  font-size: medium;
+  opacity: 1;
+  color: gray;
+  transform: translateY(-1.5em);
+  transform-origin: 0 0;
+  transition: all .3s;
+}
+.form-control{
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.form-control::placeholder{
+  color: transparent;
+}
+.form-control:valid:focus{
+  border-color: green;
+}
+.form-control:invalid:focus{
+  border-color: red;
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label
+{
+  transform: translateY(-2.6em) scale(.8);
+  color: rgb(28, 117, 241);
+}
+#i-email:focus-within{
+  transform: scale(1.03,1.03);
+}
+#i-pass:focus-within{
+  transform: scale(1.03,1.03);
+}
+
+/*INPUT-ZONE-END*/
+.Text_contraseña{
+  padding: 10px;
+}
+
+#btn_inicio{
+  border-radius: 5px;
+  color: whitesmoke;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#link{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  text-transform: uppercase;
+}
+#link:hover{
+  text-decoration: none;
+}
+.link-registro{
+  margin-top: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  width: auto;
+}
